@@ -47,14 +47,3 @@ cacheSolve <- function(x, ...) {
         x$setinverse(inv)
         inv
 }
-
-
-x <- matrix(data=c(4,7,5,2,8,1,6,2,1), nrow = 3, ncol = 3)
-x
-
-aMatrix <- makeCacheMatrix(x)
-aMatrix$set(x)
-aMatrix$get()
-aMatrix$getinv()
-
-cacheSolve(aMatrix)
